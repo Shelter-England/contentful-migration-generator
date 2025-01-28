@@ -5,15 +5,23 @@
   "main": "index.js",
   "scripts": {
     "migrations-generate": "node index.js",
+    "export-local-authorities": "node scripts/export-import/local-authorities.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@contentful/rich-text-from-markdown": "^14.1.1",
-    "contentful": "^7.14.4",
+    "contentful": "^10.6.18",
     "contentful-cli": "^1.4.1",
     "contentful-management": "^7.18.2",
+    "csv-writer": "^1.6.0",
     "dotenv": "^8.2.0"
-  }
+  },
+  "devDependencies": {
+    "csv": "^6.3.8",
+    "lodash": "^4.17.21",
+    "underscore": "^1.13.7"
+  },
+  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
 }
