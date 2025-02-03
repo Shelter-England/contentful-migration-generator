@@ -25,7 +25,7 @@ function execMe(cmd, name) {
 }
 
 client
-  .getContentTypes()
+  .getContentTypes({ limit: 300 })
   .then(async contentTypes => {
     const generateMigrations = async () => {
       console.log('=====Generating content model migrations=====');
